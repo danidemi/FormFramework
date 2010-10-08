@@ -1,3 +1,8 @@
+#import "FieldCatalog.h"
+#import "FormCell.h"
+#import "FormControllerDelegate.h"
+#import "FieldStyle.h"
+
 @interface FormController : UITableViewController {
 	FieldCatalog *catalog;
 	FormCell *currentlyEditing;

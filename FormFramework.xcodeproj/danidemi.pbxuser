@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 484F4694125F2D54006B3BF8 /* FormFramework */;
+		activeTarget = 866F18A6125DD64B0067663E /* FormFramework */;
+		addToTargets = (
+			866F18A6125DD64B0067663E /* FormFramework */,
+		);
+		codeSenseManager = 484F4699125F2D72006B3BF8 /* Code sense */;
+		executables = (
+			484F4694125F2D54006B3BF8 /* FormFramework */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					504,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 308239549;
+			PBXWorkspaceStateSaveDate = 308239549;
+		};
+		perUserProjectItems = {
+			484F469A125F315B006B3BF8 = 484F469A125F315B006B3BF8 /* PBXTextBookmark */;
+			484F469B125F315B006B3BF8 = 484F469B125F315B006B3BF8 /* PBXTextBookmark */;
+			484F480F125F5D0B006B3BF8 /* XCBuildMessageTextBookmark */ = 484F480F125F5D0B006B3BF8 /* XCBuildMessageTextBookmark */;
+			484F4810125F5D0B006B3BF8 /* PBXTextBookmark */ = 484F4810125F5D0B006B3BF8 /* PBXTextBookmark */;
+			484F481B125F5DB5006B3BF8 /* PBXTextBookmark */ = 484F481B125F5DB5006B3BF8 /* PBXTextBookmark */;
+			484F481C125F5DB5006B3BF8 /* PBXTextBookmark */ = 484F481C125F5DB5006B3BF8 /* PBXTextBookmark */;
+			484F481D125F5DB5006B3BF8 /* XCBuildMessageTextBookmark */ = 484F481D125F5DB5006B3BF8 /* XCBuildMessageTextBookmark */;
+			484F481E125F5DB5006B3BF8 /* PBXTextBookmark */ = 484F481E125F5DB5006B3BF8 /* PBXTextBookmark */;
+			484F4827125F5DD2006B3BF8 /* PBXTextBookmark */ = 484F4827125F5DD2006B3BF8 /* PBXTextBookmark */;
+			484F4828125F5DD2006B3BF8 /* PBXTextBookmark */ = 484F4828125F5DD2006B3BF8 /* PBXTextBookmark */;
+			484F4829125F5DD2006B3BF8 /* PBXTextBookmark */ = 484F4829125F5DD2006B3BF8 /* PBXTextBookmark */;
+			484F482A125F5DD2006B3BF8 /* PBXTextBookmark */ = 484F482A125F5DD2006B3BF8 /* PBXTextBookmark */;
+			484F482B125F5DD2006B3BF8 /* PBXTextBookmark */ = 484F482B125F5DD2006B3BF8 /* PBXTextBookmark */;
+			484F482E125F5E16006B3BF8 /* PBXTextBookmark */ = 484F482E125F5E16006B3BF8 /* PBXTextBookmark */;
+			484F482F125F5E16006B3BF8 /* XCBuildMessageTextBookmark */ = 484F482F125F5E16006B3BF8 /* XCBuildMessageTextBookmark */;
+			484F4830125F5E16006B3BF8 /* PBXTextBookmark */ = 484F4830125F5E16006B3BF8 /* PBXTextBookmark */;
+			484F4836125F5E6F006B3BF8 /* PBXTextBookmark */ = 484F4836125F5E6F006B3BF8 /* PBXTextBookmark */;
+			484F4837125F5E6F006B3BF8 /* XCBuildMessageTextBookmark */ = 484F4837125F5E6F006B3BF8 /* XCBuildMessageTextBookmark */;
+			484F4838125F5E6F006B3BF8 /* PBXTextBookmark */ = 484F4838125F5E6F006B3BF8 /* PBXTextBookmark */;
+			484F483B125F5E71006B3BF8 /* PBXTextBookmark */ = 484F483B125F5E71006B3BF8 /* PBXTextBookmark */;
+			484F483C125F5E71006B3BF8 /* PBXTextBookmark */ = 484F483C125F5E71006B3BF8 /* PBXTextBookmark */;
+			484F483D125F5E71006B3BF8 /* XCBuildMessageTextBookmark */ = 484F483D125F5E71006B3BF8 /* XCBuildMessageTextBookmark */;
+			484F483E125F5E71006B3BF8 /* PBXTextBookmark */ = 484F483E125F5E71006B3BF8 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 484F4698125F2D72006B3BF8 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	484F4694125F2D54006B3BF8 /* FormFramework */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = FormFramework;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	484F4698125F2D72006B3BF8 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	484F4699125F2D72006B3BF8 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	484F469A125F315B006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17F3125DD3FB0067663E /* ArrayPickerCellDelegate.h */;
+		name = "ArrayPickerCellDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 207;
+		vrLoc = 0;
+	};
+	484F469B125F315B006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17F3125DD3FB0067663E /* ArrayPickerCellDelegate.h */;
+		name = "ArrayPickerCellDelegate.h: 11";
+		rLen = 0;
+		rLoc = 207;
+		rType = 0;
+		vrLen = 207;
+		vrLoc = 0;
+	};
+	484F480F125F5D0B006B3BF8 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected specifier-qualifier-list before 'FieldCatalog'";
+		fRef = 866F17FC125DD3FB0067663E /* FormController.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 3;
+		rType = 1;
+	};
+	484F4810125F5D0B006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FC125DD3FB0067663E /* FormController.h */;
+		name = "FormController.h: 2";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 597;
+		vrLoc = 0;
+	};
+	484F481B125F5DB5006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F1801125DD3FB0067663E /* FormView.m */;
+		name = "FormView.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 328;
+		vrLoc = 0;
+	};
+	484F481C125F5DB5006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FC125DD3FB0067663E /* FormController.h */;
+		name = "FormController.h: 1";
+		rLen = 0;
+		rLoc = 103;
+		rType = 0;
+		vrLen = 624;
+		vrLoc = 0;
+	};
+	484F481D125F5DB5006B3BF8 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot find interface declaration for 'FormFieldCell', superclass of 'FormFieldCellLabel'";
+		fRef = 866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 3;
+		rType = 1;
+	};
+	484F481E125F5DB5006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */;
+		name = "FormFieldCellLabel.h: 2";
+		rLen = 0;
+		rLoc = 59;
+		rType = 0;
+		vrLen = 186;
+		vrLoc = 0;
+	};
+	484F4827125F5DD2006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17F3125DD3FB0067663E /* ArrayPickerCellDelegate.h */;
+		name = "ArrayPickerCellDelegate.h: 11";
+		rLen = 0;
+		rLoc = 207;
+		rType = 0;
+		vrLen = 207;
+		vrLoc = 0;
+	};
+	484F4828125F5DD2006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FC125DD3FB0067663E /* FormController.h */;
+		name = "FormController.h: 5";
+		rLen = 0;
+		rLoc = 277;
+		rType = 0;
+		vrLen = 1281;
+		vrLoc = 0;
+	};
+	484F4829125F5DD2006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F1801125DD3FB0067663E /* FormView.m */;
+		name = "FormView.m: 4";
+		rLen = 0;
+		rLoc = 37;
+		rType = 0;
+		vrLen = 381;
+		vrLoc = 0;
+	};
+	484F482A125F5DD2006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FD125DD3FB0067663E /* FormController.m */;
+		name = "FormController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 554;
+		vrLoc = 0;
+	};
+	484F482B125F5DD2006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FD125DD3FB0067663E /* FormController.m */;
+		name = "FormController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 554;
+		vrLoc = 0;
+	};
+	484F482E125F5E16006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FC125DD3FB0067663E /* FormController.h */;
+		name = "FormController.h: 2";
+		rLen = 0;
+		rLoc = 103;
+		rType = 0;
+		vrLen = 465;
+		vrLoc = 0;
+	};
+	484F482F125F5E16006B3BF8 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot find interface declaration for 'FormFieldCell', superclass of 'FormFieldCellLabel'";
+		fRef = 866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 3;
+		rType = 1;
+	};
+	484F4830125F5E16006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */;
+		name = "FormFieldCellLabel.h: 4";
+		rLen = 0;
+		rLoc = 61;
+		rType = 0;
+		vrLen = 186;
+		vrLoc = 0;
+	};
+	484F4836125F5E6F006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */;
+		name = "FormFieldCellLabel.h: 2";
+		rLen = 0;
+		rLoc = 59;
+		rType = 0;
+		vrLen = 186;
+		vrLoc = 0;
+	};
+	484F4837125F5E6F006B3BF8 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot find protocol declaration for 'FormControllerDelegate'";
+		fRef = 866F17FC125DD3FB0067663E /* FormController.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 8;
+		rType = 1;
+	};
+	484F4838125F5E6F006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FC125DD3FB0067663E /* FormController.h */;
+		name = "FormController.h: 9";
+		rLen = 0;
+		rLoc = 210;
+		rType = 0;
+		vrLen = 476;
+		vrLoc = 0;
+	};
+	484F483B125F5E71006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FD125DD3FB0067663E /* FormController.m */;
+		name = "FormController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 554;
+		vrLoc = 0;
+	};
+	484F483C125F5E71006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17FC125DD3FB0067663E /* FormController.h */;
+		name = "FormController.h: 2";
+		rLen = 0;
+		rLoc = 103;
+		rType = 0;
+		vrLen = 1328;
+		vrLoc = 0;
+	};
+	484F483D125F5E71006B3BF8 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Cannot find interface declaration for 'FormFieldCell', superclass of 'FormFieldCellLabel'";
+		fRef = 866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 3;
+		rType = 1;
+	};
+	484F483E125F5E71006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */;
+		name = "FormFieldCellLabel.h: 4";
+		rLen = 0;
+		rLoc = 61;
+		rType = 0;
+		vrLen = 186;
+		vrLoc = 0;
+	};
+	866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {682, 350}}";
+			sepNavSelRange = "{61, 0}";
+			sepNavVisRange = "{0, 186}";
+			sepNavWindowFrame = "{{84, 120}, {750, 558}}";
+		};
+	};
+	866F17F3125DD3FB0067663E /* ArrayPickerCellDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 373}}";
+			sepNavSelRange = "{207, 0}";
+			sepNavVisRange = "{0, 207}";
+		};
+	};
+	866F17FC125DD3FB0067663E /* FormController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {660, 975}}";
+			sepNavSelRange = "{210, 0}";
+			sepNavVisRange = "{0, 476}";
+			sepNavWindowFrame = "{{107, 99}, {750, 558}}";
+		};
+	};
+	866F17FD125DD3FB0067663E /* FormController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1258, 3978}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 554}";
+		};
+	};
+	866F1801125DD3FB0067663E /* FormView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 373}}";
+			sepNavSelRange = "{37, 0}";
+			sepNavVisRange = "{0, 381}";
+		};
+	};
+	866F18A6125DD64B0067663E /* FormFramework */ = {
+		activeExec = 0;
+		executables = (
+			484F4694125F2D54006B3BF8 /* FormFramework */,
+		);
+	};
+}

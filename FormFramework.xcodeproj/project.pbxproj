@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484F4804125F5CEA006B3BF8 /* Example0.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F47FF125F5CEA006B3BF8 /* Example0.m */; };
+		484F4805125F5CEA006B3BF8 /* Example0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484F4800125F5CEA006B3BF8 /* Example0.xib */; };
+		484F4806125F5CEA006B3BF8 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484F4801125F5CEA006B3BF8 /* Window.xib */; };
+		484F4807125F5CEA006B3BF8 /* Example0AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F4803125F5CEA006B3BF8 /* Example0AppDelegate.m */; };
 		866F18AC125DD6A30067663E /* UIViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F1804125DD3FB0067663E /* UIViewUtils.m */; };
 		866F18AE125DD6A30067663E /* PlainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17E6125DD3FB0067663E /* PlainStyle.m */; };
 		866F18B0125DD6A30067663E /* LabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17E4125DD3FB0067663E /* LabelStyle.m */; };
@@ -31,6 +35,12 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		484F47FE125F5CEA006B3BF8 /* Example0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example0.h; sourceTree = "<group>"; };
+		484F47FF125F5CEA006B3BF8 /* Example0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example0.m; sourceTree = "<group>"; };
+		484F4800125F5CEA006B3BF8 /* Example0.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Example0.xib; sourceTree = "<group>"; };
+		484F4801125F5CEA006B3BF8 /* Window.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
+		484F4802125F5CEA006B3BF8 /* Example0AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example0AppDelegate.h; sourceTree = "<group>"; };
+		484F4803125F5CEA006B3BF8 /* Example0AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example0AppDelegate.m; sourceTree = "<group>"; };
 		866F17E2125DD3FB0067663E /* FieldStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldStyle.h; sourceTree = "<group>"; };
 		866F17E3125DD3FB0067663E /* LabelStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelStyle.h; sourceTree = "<group>"; };
 		866F17E4125DD3FB0067663E /* LabelStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelStyle.m; sourceTree = "<group>"; };
@@ -101,6 +111,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				484F47FD125F5CEA006B3BF8 /* Examples */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -126,6 +137,19 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		484F47FD125F5CEA006B3BF8 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				484F47FE125F5CEA006B3BF8 /* Example0.h */,
+				484F47FF125F5CEA006B3BF8 /* Example0.m */,
+				484F4800125F5CEA006B3BF8 /* Example0.xib */,
+				484F4801125F5CEA006B3BF8 /* Window.xib */,
+				484F4802125F5CEA006B3BF8 /* Example0AppDelegate.h */,
+				484F4803125F5CEA006B3BF8 /* Example0AppDelegate.m */,
+			);
+			name = Examples;
 			sourceTree = "<group>";
 		};
 		866F17E0125DD3FB0067663E /* Form Framework */ = {
@@ -256,6 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484F4805125F5CEA006B3BF8 /* Example0.xib in Resources */,
+				484F4806125F5CEA006B3BF8 /* Window.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +307,8 @@
 				866F18C5125DD6A30067663E /* FormCell.m in Sources */,
 				866F18C8125DD6A30067663E /* FieldCatalog.m in Sources */,
 				866F18CA125DD6A30067663E /* ArrayPickerCellDelegate.m in Sources */,
+				484F4804125F5CEA006B3BF8 /* Example0.m in Sources */,
+				484F4807125F5CEA006B3BF8 /* Example0AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
