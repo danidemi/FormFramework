@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		866F18AC125DD6A30067663E /* UIViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F1804125DD3FB0067663E /* UIViewUtils.m */; };
+		866F18AE125DD6A30067663E /* PlainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17E6125DD3FB0067663E /* PlainStyle.m */; };
+		866F18B0125DD6A30067663E /* LabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17E4125DD3FB0067663E /* LabelStyle.m */; };
+		866F18B2125DD6A30067663E /* FormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F1801125DD3FB0067663E /* FormView.m */; };
+		866F18B4125DD6A30067663E /* FormPickerCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17F6125DD3FB0067663E /* FormPickerCellLabel.m */; };
+		866F18B7125DD6A30067663E /* FormPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17F1125DD3FB0067663E /* FormPickerCell.m */; };
+		866F18BA125DD6A30067663E /* FormFieldCellLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17EE125DD3FB0067663E /* FormFieldCellLabel.m */; };
+		866F18BC125DD6A30067663E /* FormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17EC125DD3FB0067663E /* FormFieldCell.m */; };
+		866F18BE125DD6A30067663E /* FormDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17FB125DD3FB0067663E /* FormDatePickerCell.m */; };
+		866F18C0125DD6A30067663E /* FormCreditCardExpirationPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17F8125DD3FB0067663E /* FormCreditCardExpirationPicker.m */; };
+		866F18C3125DD6A30067663E /* FormController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17FD125DD3FB0067663E /* FormController.m */; };
+		866F18C5125DD6A30067663E /* FormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17E9125DD3FB0067663E /* FormCell.m */; };
+		866F18C8125DD6A30067663E /* FieldCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17FF125DD3FB0067663E /* FieldCatalog.m */; };
+		866F18CA125DD6A30067663E /* ArrayPickerCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17F4125DD3FB0067663E /* ArrayPickerCellDelegate.m */; };
+		866F18CC125DD6B90067663E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		866F18CD125DD6BC0067663E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		866F1921125DD6BE0067663E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		866F1943125DD6D30067663E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F1847125DD5820067663E /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		866F17E2125DD3FB0067663E /* FieldStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldStyle.h; sourceTree = "<group>"; };
+		866F17E3125DD3FB0067663E /* LabelStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelStyle.h; sourceTree = "<group>"; };
+		866F17E4125DD3FB0067663E /* LabelStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelStyle.m; sourceTree = "<group>"; };
+		866F17E5125DD3FB0067663E /* PlainStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainStyle.h; sourceTree = "<group>"; };
+		866F17E6125DD3FB0067663E /* PlainStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainStyle.m; sourceTree = "<group>"; };
+		866F17E8125DD3FB0067663E /* FormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormCell.h; sourceTree = "<group>"; };
+		866F17E9125DD3FB0067663E /* FormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormCell.m; sourceTree = "<group>"; };
+		866F17EB125DD3FB0067663E /* FormFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormFieldCell.h; sourceTree = "<group>"; };
+		866F17EC125DD3FB0067663E /* FormFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormFieldCell.m; sourceTree = "<group>"; };
+		866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormFieldCellLabel.h; sourceTree = "<group>"; };
+		866F17EE125DD3FB0067663E /* FormFieldCellLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormFieldCellLabel.m; sourceTree = "<group>"; };
+		866F17F0125DD3FB0067663E /* FormPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormPickerCell.h; sourceTree = "<group>"; };
+		866F17F1125DD3FB0067663E /* FormPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormPickerCell.m; sourceTree = "<group>"; };
+		866F17F2125DD3FB0067663E /* FormPickerCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormPickerCellDelegate.h; sourceTree = "<group>"; };
+		866F17F3125DD3FB0067663E /* ArrayPickerCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayPickerCellDelegate.h; sourceTree = "<group>"; };
+		866F17F4125DD3FB0067663E /* ArrayPickerCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayPickerCellDelegate.m; sourceTree = "<group>"; };
+		866F17F5125DD3FB0067663E /* FormPickerCellLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormPickerCellLabel.h; sourceTree = "<group>"; };
+		866F17F6125DD3FB0067663E /* FormPickerCellLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormPickerCellLabel.m; sourceTree = "<group>"; };
+		866F17F7125DD3FB0067663E /* FormCreditCardExpirationPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormCreditCardExpirationPicker.h; sourceTree = "<group>"; };
+		866F17F8125DD3FB0067663E /* FormCreditCardExpirationPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormCreditCardExpirationPicker.m; sourceTree = "<group>"; };
+		866F17FA125DD3FB0067663E /* FormDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormDatePickerCell.h; sourceTree = "<group>"; };
+		866F17FB125DD3FB0067663E /* FormDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormDatePickerCell.m; sourceTree = "<group>"; };
+		866F17FC125DD3FB0067663E /* FormController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormController.h; sourceTree = "<group>"; };
+		866F17FD125DD3FB0067663E /* FormController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormController.m; sourceTree = "<group>"; };
+		866F17FE125DD3FB0067663E /* FieldCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldCatalog.h; sourceTree = "<group>"; };
+		866F17FF125DD3FB0067663E /* FieldCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldCatalog.m; sourceTree = "<group>"; };
+		866F1800125DD3FB0067663E /* FormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormView.h; sourceTree = "<group>"; };
+		866F1801125DD3FB0067663E /* FormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormView.m; sourceTree = "<group>"; };
+		866F1802125DD3FB0067663E /* FormControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormControllerDelegate.h; sourceTree = "<group>"; };
+		866F1803125DD3FB0067663E /* UIViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewUtils.h; sourceTree = "<group>"; };
+		866F1804125DD3FB0067663E /* UIViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewUtils.m; sourceTree = "<group>"; };
+		866F1805125DD3FB0067663E /* FormFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormFramework.h; sourceTree = "<group>"; };
+		866F1847125DD5820067663E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		866F18A7125DD64B0067663E /* FormFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107310486CEB800E47090 /* FormFramework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FormFramework-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		866F18A5125DD64B0067663E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866F1921125DD6BE0067663E /* CoreGraphics.framework in Frameworks */,
+				866F18CD125DD6BC0067663E /* Foundation.framework in Frameworks */,
+				866F18CC125DD6B90067663E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				866F17E0125DD3FB0067663E /* Form Framework */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				866F18A7125DD64B0067663E /* FormFramework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				866F1847125DD5820067663E /* main.m */,
+				8D1107310486CEB800E47090 /* FormFramework-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		866F17E0125DD3FB0067663E /* Form Framework */ = {
+			isa = PBXGroup;
+			children = (
+				866F17FC125DD3FB0067663E /* FormController.h */,
+				866F17FD125DD3FB0067663E /* FormController.m */,
+				866F17FE125DD3FB0067663E /* FieldCatalog.h */,
+				866F17FF125DD3FB0067663E /* FieldCatalog.m */,
+				866F1800125DD3FB0067663E /* FormView.h */,
+				866F1801125DD3FB0067663E /* FormView.m */,
+				866F1802125DD3FB0067663E /* FormControllerDelegate.h */,
+				866F1803125DD3FB0067663E /* UIViewUtils.h */,
+				866F1804125DD3FB0067663E /* UIViewUtils.m */,
+				866F1805125DD3FB0067663E /* FormFramework.h */,
+				866F17E7125DD3FB0067663E /* Fields */,
+				866F17E1125DD3FB0067663E /* Style */,
+			);
+			name = "Form Framework";
+			sourceTree = "<group>";
+		};
+		866F17E1125DD3FB0067663E /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				866F17E2125DD3FB0067663E /* FieldStyle.h */,
+				866F17E3125DD3FB0067663E /* LabelStyle.h */,
+				866F17E4125DD3FB0067663E /* LabelStyle.m */,
+				866F17E5125DD3FB0067663E /* PlainStyle.h */,
+				866F17E6125DD3FB0067663E /* PlainStyle.m */,
+			);
+			name = Style;
+			sourceTree = "<group>";
+		};
+		866F17E7125DD3FB0067663E /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				866F17F9125DD3FB0067663E /* Date Picker */,
+				866F17EF125DD3FB0067663E /* Picker */,
+				866F17EA125DD3FB0067663E /* Text */,
+				866F17E8125DD3FB0067663E /* FormCell.h */,
+				866F17E9125DD3FB0067663E /* FormCell.m */,
+			);
+			name = Fields;
+			sourceTree = "<group>";
+		};
+		866F17EA125DD3FB0067663E /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				866F17EB125DD3FB0067663E /* FormFieldCell.h */,
+				866F17EC125DD3FB0067663E /* FormFieldCell.m */,
+				866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */,
+				866F17EE125DD3FB0067663E /* FormFieldCellLabel.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		866F17EF125DD3FB0067663E /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				866F17F0125DD3FB0067663E /* FormPickerCell.h */,
+				866F17F1125DD3FB0067663E /* FormPickerCell.m */,
+				866F17F2125DD3FB0067663E /* FormPickerCellDelegate.h */,
+				866F17F3125DD3FB0067663E /* ArrayPickerCellDelegate.h */,
+				866F17F4125DD3FB0067663E /* ArrayPickerCellDelegate.m */,
+				866F17F5125DD3FB0067663E /* FormPickerCellLabel.h */,
+				866F17F6125DD3FB0067663E /* FormPickerCellLabel.m */,
+				866F17F7125DD3FB0067663E /* FormCreditCardExpirationPicker.h */,
+				866F17F8125DD3FB0067663E /* FormCreditCardExpirationPicker.m */,
+			);
+			name = Picker;
+			sourceTree = "<group>";
+		};
+		866F17F9125DD3FB0067663E /* Date Picker */ = {
+			isa = PBXGroup;
+			children = (
+				866F17FA125DD3FB0067663E /* FormDatePickerCell.h */,
+				866F17FB125DD3FB0067663E /* FormDatePickerCell.m */,
+			);
+			name = "Date Picker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		866F18A6125DD64B0067663E /* FormFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 866F18AB125DD6690067663E /* Build configuration list for PBXNativeTarget "FormFramework" */;
+			buildPhases = (
+				866F18A3125DD64B0067663E /* Resources */,
+				866F18A4125DD64B0067663E /* Sources */,
+				866F18A5125DD64B0067663E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormFramework;
+			productName = FormFramework;
+			productReference = 866F18A7125DD64B0067663E /* FormFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FormFramework" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				866F18A6125DD64B0067663E /* FormFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		866F18A3125DD64B0067663E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		866F18A4125DD64B0067663E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				866F1943125DD6D30067663E /* main.m in Sources */,
+				866F18AC125DD6A30067663E /* UIViewUtils.m in Sources */,
+				866F18AE125DD6A30067663E /* PlainStyle.m in Sources */,
+				866F18B0125DD6A30067663E /* LabelStyle.m in Sources */,
+				866F18B2125DD6A30067663E /* FormView.m in Sources */,
+				866F18B4125DD6A30067663E /* FormPickerCellLabel.m in Sources */,
+				866F18B7125DD6A30067663E /* FormPickerCell.m in Sources */,
+				866F18BA125DD6A30067663E /* FormFieldCellLabel.m in Sources */,
+				866F18BC125DD6A30067663E /* FormFieldCell.m in Sources */,
+				866F18BE125DD6A30067663E /* FormDatePickerCell.m in Sources */,
+				866F18C0125DD6A30067663E /* FormCreditCardExpirationPicker.m in Sources */,
+				866F18C3125DD6A30067663E /* FormController.m in Sources */,
+				866F18C5125DD6A30067663E /* FormCell.m in Sources */,
+				866F18C8125DD6A30067663E /* FieldCatalog.m in Sources */,
+				866F18CA125DD6A30067663E /* ArrayPickerCellDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		866F18A9125DD64B0067663E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "FormFramework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FormFramework;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		866F18AA125DD64B0067663E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "FormFramework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FormFramework;
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		866F18AB125DD6690067663E /* Build configuration list for PBXNativeTarget "FormFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				866F18A9125DD64B0067663E /* Debug */,
+				866F18AA125DD64B0067663E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FormFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
