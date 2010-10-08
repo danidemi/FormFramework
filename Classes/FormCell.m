@@ -42,10 +42,19 @@
 	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
 	
 	//Toolbar should be built firstly to discover its heigh
-	UIBarButtonItem* prevBtn = [[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"form.toolbar.previousButton",nil) style:UIBarButtonItemStyleBordered target:self action:@selector(actionPrevious)] autorelease];
-	UIBarButtonItem* nextBtn = [[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"form.toolbar.nextButton",nil) style:UIBarButtonItemStyleBordered target:self action:@selector(actionNext)] autorelease];	
+	NSString* btnLbl = NSLocalizedString(@"form.toolbar.previousButton", nil);
+	if ([btnLbl isEqualToString:@"form.toolbar.previousButton"]) {btnLbl = @"Prev";}
+	UIBarButtonItem* prevBtn = [[[UIBarButtonItem alloc] initWithTitle:btnLbl style:UIBarButtonItemStyleBordered target:self action:@selector(actionPrevious)] autorelease];
+	
+	btnLbl = NSLocalizedString(@"form.toolbar.nextButton", nil);
+	if ([btnLbl isEqualToString:@"form.toolbar.nextButton"]) {btnLbl = @"Next";}	
+	UIBarButtonItem* nextBtn = [[[UIBarButtonItem alloc] initWithTitle:btnLbl style:UIBarButtonItemStyleBordered target:self action:@selector(actionNext)] autorelease];	
+
 	UIBarButtonItem* flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];	
-	UIBarButtonItem* doneBtn = [[[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"form.toolbar.doneButton",nil) style:UIBarButtonItemStyleDone target:self action:@selector(actionDone)] autorelease];
+		
+	btnLbl = NSLocalizedString(@"form.toolbar.doneButton", nil);
+	if ([btnLbl isEqualToString:@"form.toolbar.doneButton"]) {btnLbl = @"Done";}
+	UIBarButtonItem* doneBtn = [[[UIBarButtonItem alloc] initWithTitle:btnLbl style:UIBarButtonItemStyleDone target:self action:@selector(actionDone)] autorelease];
 	
 	UIToolbar* toolbar = [[[UIToolbar alloc] init] autorelease];	
 	[toolbar setItems: [NSArray arrayWithObjects:prevBtn, nextBtn, flexItem, doneBtn, nil] animated:YES];

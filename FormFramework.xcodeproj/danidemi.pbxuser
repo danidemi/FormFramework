@@ -7,6 +7,9 @@
 		addToTargets = (
 			866F18A6125DD64B0067663E /* FormFramework */,
 		);
+		breakpoints = (
+			484F4850125F641B006B3BF8 /* FormCell.m:45 */,
+		);
 		codeSenseManager = 484F4699125F2D72006B3BF8 /* Code sense */;
 		executables = (
 			484F4694125F2D54006B3BF8 /* FormFramework */,
@@ -61,6 +64,18 @@
 			484F483C125F5E71006B3BF8 /* PBXTextBookmark */ = 484F483C125F5E71006B3BF8 /* PBXTextBookmark */;
 			484F483D125F5E71006B3BF8 /* XCBuildMessageTextBookmark */ = 484F483D125F5E71006B3BF8 /* XCBuildMessageTextBookmark */;
 			484F483E125F5E71006B3BF8 /* PBXTextBookmark */ = 484F483E125F5E71006B3BF8 /* PBXTextBookmark */;
+			484F4854125F6422006B3BF8 /* PBXTextBookmark */ = 484F4854125F6422006B3BF8 /* PBXTextBookmark */;
+			484F4855125F6422006B3BF8 /* PBXTextBookmark */ = 484F4855125F6422006B3BF8 /* PBXTextBookmark */;
+			484F4856125F6422006B3BF8 /* PBXTextBookmark */ = 484F4856125F6422006B3BF8 /* PBXTextBookmark */;
+			484F4857125F6422006B3BF8 /* PlistBookmark */ = 484F4857125F6422006B3BF8 /* PlistBookmark */;
+			484F4858125F6422006B3BF8 /* PBXBookmark */ = 484F4858125F6422006B3BF8 /* PBXBookmark */;
+			484F4859125F6422006B3BF8 /* PBXTextBookmark */ = 484F4859125F6422006B3BF8 /* PBXTextBookmark */;
+			484F485C125F6422006B3BF8 /* PBXTextBookmark */ = 484F485C125F6422006B3BF8 /* PBXTextBookmark */;
+			484F485D125F6422006B3BF8 /* PBXTextBookmark */ = 484F485D125F6422006B3BF8 /* PBXTextBookmark */;
+			484F4865125F64AF006B3BF8 /* PBXTextBookmark */ = 484F4865125F64AF006B3BF8 /* PBXTextBookmark */;
+			484F4866125F64AF006B3BF8 /* PBXTextBookmark */ = 484F4866125F64AF006B3BF8 /* PBXTextBookmark */;
+			484F486C125F6996006B3BF8 /* PBXTextBookmark */ = 484F486C125F6996006B3BF8 /* PBXTextBookmark */;
+			484F486D125F6996006B3BF8 /* PBXTextBookmark */ = 484F486D125F6996006B3BF8 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 484F4698125F2D72006B3BF8 /* Source Control */;
 		userBuildSettings = {
@@ -73,7 +88,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -90,9 +105,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = FormFramework;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	484F4698125F2D72006B3BF8 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -333,6 +352,160 @@
 		vrLen = 186;
 		vrLoc = 0;
 	};
+	484F4850125F641B006B3BF8 /* FormCell.m:45 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 866F17E9125DD3FB0067663E /* FormCell.m */;
+		functionName = "-showToolbar";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 45;
+		location = FormFramework;
+		modificationTime = 308241587.267837;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	484F4854125F6422006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */;
+		name = "FormFieldCellLabel.h: 4";
+		rLen = 0;
+		rLoc = 61;
+		rType = 0;
+		vrLen = 186;
+		vrLoc = 0;
+	};
+	484F4855125F6422006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17EB125DD3FB0067663E /* FormFieldCell.h */;
+		name = "FormFieldCell.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 236;
+		vrLoc = 0;
+	};
+	484F4856125F6422006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17EC125DD3FB0067663E /* FormFieldCell.m */;
+		name = "FormFieldCell.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 499;
+		vrLoc = 0;
+	};
+	484F4857125F6422006B3BF8 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* FormFramework-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/danidemi/Documents/FormFramework/FormFramework-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	484F4858125F6422006B3BF8 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 866F1803125DD3FB0067663E /* UIViewUtils.h */;
+	};
+	484F4859125F6422006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F1803125DD3FB0067663E /* UIViewUtils.h */;
+		name = "UIViewUtils.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 0;
+	};
+	484F485C125F6422006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17E9125DD3FB0067663E /* FormCell.m */;
+		name = "FormCell.m: 57";
+		rLen = 0;
+		rLoc = 1944;
+		rType = 0;
+		vrLen = 1605;
+		vrLoc = 790;
+	};
+	484F485D125F6422006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17E9125DD3FB0067663E /* FormCell.m */;
+		name = "FormCell.m: 57";
+		rLen = 0;
+		rLoc = 1944;
+		rType = 0;
+		vrLen = 1605;
+		vrLoc = 790;
+	};
+	484F4865125F64AF006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F1803125DD3FB0067663E /* UIViewUtils.h */;
+		name = "UIViewUtils.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 0;
+	};
+	484F4866125F64AF006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17E9125DD3FB0067663E /* FormCell.m */;
+		name = "FormCell.m: 46";
+		rLen = 0;
+		rLoc = 1023;
+		rType = 0;
+		vrLen = 1654;
+		vrLoc = 790;
+	};
+	484F486C125F6996006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F1803125DD3FB0067663E /* UIViewUtils.h */;
+		name = "UIViewUtils.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 0;
+	};
+	484F486D125F6996006B3BF8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 866F17E9125DD3FB0067663E /* FormCell.m */;
+		name = "FormCell.m: 50";
+		rLen = 0;
+		rLoc = 1412;
+		rType = 0;
+		vrLen = 1740;
+		vrLoc = 790;
+	};
+	866F17E9125DD3FB0067663E /* FormCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1216, 1274}}";
+			sepNavSelRange = "{1412, 0}";
+			sepNavVisRange = "{790, 1740}";
+		};
+	};
+	866F17EB125DD3FB0067663E /* FormFieldCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {682, 350}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 236}";
+		};
+	};
+	866F17EC125DD3FB0067663E /* FormFieldCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {682, 728}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 499}";
+		};
+	};
 	866F17ED125DD3FB0067663E /* FormFieldCellLabel.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {682, 350}}";
@@ -370,10 +543,22 @@
 			sepNavVisRange = "{0, 381}";
 		};
 	};
+	866F1803125DD3FB0067663E /* UIViewUtils.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {682, 350}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 361}";
+		};
+	};
 	866F18A6125DD64B0067663E /* FormFramework */ = {
 		activeExec = 0;
 		executables = (
 			484F4694125F2D54006B3BF8 /* FormFramework */,
 		);
+	};
+	8D1107310486CEB800E47090 /* FormFramework-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{130, 78}, {750, 558}}";
+		};
 	};
 }
