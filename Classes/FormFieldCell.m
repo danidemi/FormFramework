@@ -33,7 +33,7 @@
 	textField.delegate = nil;
 	textField.enabled = NO;
 	[textField resignFirstResponder];
-	value = textField.text;
+	[self setValue:textField.text];
 	[self hideToolbar];
 }
 

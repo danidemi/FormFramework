@@ -214,8 +214,9 @@
 	[self beginFormEditing];
 	if(currentlyEditing){
 		[currentlyEditing stopEditing];
+		[currentlyEditing release];
 	}
-	currentlyEditing = [catalog fieldAtIndex:nextIndex];
+	currentlyEditing = [[catalog fieldAtIndex:nextIndex] retain];
 	
 	if (animated) {
 		NSIndexPath *path = [NSIndexPath indexPathForRow:[catalog indexOfField:currentlyEditing] inSection:0];
@@ -267,15 +268,22 @@
  */
 -(void)beginFormEditing{
 	if(!isEditing){
-		//shrink table
-		tableFrame = self.tableView.frame;
+		
+		//Shrink the form.		
 		CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+		
+		tableFrame = self.tableView.frame;
 		CGRect formRect = tableFrame;
-		int inputHeight = 216.0 + 44.0; //keyboard + toolbar
+		
+		int inputHeight = 216.0; //keyboard + toolbar
 		NSAssert(containingController, @"Please set a containing controller");
 		if(containingController.navigationController){
 			inputHeight = inputHeight + 44;
 		}
+		if(containingController.tabBarController){
+			inputHeight = inputHeight + 44;
+		}
+		
 		int newHeight = screenRect.size.height - inputHeight - formRect.origin.y;
 		CGRect newRect = CGRectMake(formRect.origin.x, formRect.origin.y, formRect.size.width, newHeight);
 		self.tableView.frame = newRect;
