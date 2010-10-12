@@ -3,7 +3,7 @@
 
 @implementation Example0
 
-@synthesize formController;
+@synthesize formController,switchReadonlyButton;
 
 -(void)viewDidLoad{
 	
@@ -50,13 +50,27 @@
 	 dataSource:self 
 	 styled:[LabelStyle style]];
 	
+	[self updateOutlets];
 	
+}
+
+-(void)updateOutlets{
+	NSString* label = formController.writeable ? @"Lock" : @"Unlock";	
+	[switchReadonlyButton 
+	 setTitle:label
+	 forState:UIControlStateNormal];
+}
+
+-(IBAction)doSwitchReadonly{
+	formController.writeable = !formController.writeable;
+	[self updateOutlets];
 }
 
 - (void) dealloc
 {
 	[formController release];
 	[combination release];
+	[switchReadonlyButton release];
 	[super dealloc];
 }
 

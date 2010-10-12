@@ -10,9 +10,11 @@
 	BOOL isEditing;
 	CGRect tableFrame;	
 	UIViewController* containingController;
+	BOOL isWriteable;
 }
 @property(nonatomic, retain)id formControllerDelegate;
 @property(nonatomic, retain)IBOutlet UIViewController* containingController;
+@property(nonatomic, assign)BOOL writeable;
 
 #pragma mark -
 #pragma mark Form Configuration

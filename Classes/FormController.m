@@ -11,6 +11,17 @@
 
 @synthesize formControllerDelegate, containingController;
 
+-(BOOL)writeable{
+	return isWriteable;
+}
+
+-(void)setWriteable:(BOOL)newWriteable{
+	isWriteable = newWriteable;
+	if (!isWriteable) {
+		[self dismissForm];
+	}
+}
+
 #pragma mark -
 #pragma mark Allocation / Deallocation
 
@@ -20,6 +31,7 @@
 	if (self != nil) {
 		catalog = [FieldCatalog new];
 		isEditing = NO;
+		isWriteable = YES;
 		
 	}
 	return self;
@@ -197,9 +209,10 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	int nextIndex = indexPath.row;
-	[self enableFieldAt: nextIndex withAnimation:YES];
-	
+	if (self.writeable) {
+		int nextIndex = indexPath.row;
+		[self enableFieldAt: nextIndex withAnimation:YES];
+	}
 }
 
 #pragma mark -
