@@ -11,6 +11,10 @@
 	CGRect tableFrame;	
 	UIViewController* containingController;
 	BOOL isWriteable;
+	
+	/** Panel containing the toolbar and the place where subclasses should show their input window. */
+	UIView* panel;
+	
 }
 @property(nonatomic, retain)id formControllerDelegate;
 @property(nonatomic, retain)IBOutlet UIViewController* containingController;

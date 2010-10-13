@@ -11,6 +11,7 @@
 		484F4805125F5CEA006B3BF8 /* Example0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484F4800125F5CEA006B3BF8 /* Example0.xib */; };
 		484F4806125F5CEA006B3BF8 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484F4801125F5CEA006B3BF8 /* Window.xib */; };
 		484F4807125F5CEA006B3BF8 /* Example0AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 484F4803125F5CEA006B3BF8 /* Example0AppDelegate.m */; };
+		489677EF12645AEB00DB55A5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 489677EE12645AEB00DB55A5 /* README.md */; };
 		866F18AC125DD6A30067663E /* UIViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F1804125DD3FB0067663E /* UIViewUtils.m */; };
 		866F18AE125DD6A30067663E /* PlainStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17E6125DD3FB0067663E /* PlainStyle.m */; };
 		866F18B0125DD6A30067663E /* LabelStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F17E4125DD3FB0067663E /* LabelStyle.m */; };
@@ -41,6 +42,7 @@
 		484F4801125F5CEA006B3BF8 /* Window.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
 		484F4802125F5CEA006B3BF8 /* Example0AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example0AppDelegate.h; sourceTree = "<group>"; };
 		484F4803125F5CEA006B3BF8 /* Example0AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example0AppDelegate.m; sourceTree = "<group>"; };
+		489677EE12645AEB00DB55A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		866F17E2125DD3FB0067663E /* FieldStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldStyle.h; sourceTree = "<group>"; };
 		866F17E3125DD3FB0067663E /* LabelStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelStyle.h; sourceTree = "<group>"; };
 		866F17E4125DD3FB0067663E /* LabelStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelStyle.m; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				489677EE12645AEB00DB55A5 /* README.md */,
 				484F47FD125F5CEA006B3BF8 /* Examples */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -282,6 +285,7 @@
 			files = (
 				484F4805125F5CEA006B3BF8 /* Example0.xib in Resources */,
 				484F4806125F5CEA006B3BF8 /* Window.xib in Resources */,
+				489677EF12645AEB00DB55A5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

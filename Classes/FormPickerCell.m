@@ -35,7 +35,7 @@
 	if(!picker.superview){
 		
 		[self showToolbar];
-		UIView* theView = [self panel];
+		UIView* theView = [formController panel];
 		
 		[theView addSubview:picker];
 		

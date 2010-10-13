@@ -6,10 +6,7 @@
 	NSObject *value;
 	NSString *identifier;
 	NSString *placeholder;
-	
-	/** Panel containing the toolbar and the place where subclasses should show their input window. */
-	UIView* panel;
-	
+		
 	/** FormController that managing this cell. */
 	FormController *formController;
 }
@@ -35,7 +32,9 @@
 /** 
  Panel containing the toolbar and the place where subclasses should show their input window.
  */
+/*
 -(UIView*)panel;
+*/
 
 #pragma mark -
 #pragma mark Toolbar Events
