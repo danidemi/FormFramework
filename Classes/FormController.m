@@ -355,6 +355,96 @@
 	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
 	
 	//Toolbar should be built firstly to discover its heigh
+	UIBarButtonItem* prevBtn = [[[UIBarButtonItem alloc] initWithTitle:[self labelForPrevious] style:UIBarButtonItemStyleBordered target:self action:@selector(actionPrevious)] autorelease];
+	UIBarButtonItem* nextBtn = [[[UIBarButtonItem alloc] initWithTitle:[self labelForNext] style:UIBarButtonItemStyleBordered target:self action:@selector(actionNext)] autorelease];		
+	UIBarButtonItem* flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];	
+	UIBarButtonItem* doneBtn = [[[UIBarButtonItem alloc] initWithTitle:[self labelForDone] style:UIBarButtonItemStyleDone target:self action:@selector(actionDone)] autorelease];
+	
+	UIToolbar* toolbar = [[[UIToolbar alloc] init] autorelease];	
+	[toolbar setItems: [NSArray arrayWithObjects:prevBtn, nextBtn, flexItem, doneBtn, nil] animated:YES];
+	[toolbar setTintColor: [UIColor colorWithRed:0.569 green:0.6 blue:0.643 alpha:1.0]];
+	CGSize navSize = [toolbar sizeThatFits:CGSizeZero];
+	
+	
+	//Big gray view that contains all input
+	panel = [UIView new];
+	CGRect panelFrame = CGRectMake(0.0,
+								   screenRect.size.height - (196.0 + navSize.height),
+								   navSize.width,
+								   navSize.height + 196.0
+								   );	
+	panel.frame = panelFrame;
+	[[UIViewUtils rootViewOf:[self tableView]] addSubview:panel];	
+	panel.backgroundColor = [UIColor colorWithRed:0.569 green:0.6 blue:0.643 alpha:1.0];
+	
+	//Set the navigaiton frame inside the panel
+	CGRect navigationFrame = CGRectMake(0.0,
+										0.0,
+										navSize.width,
+										navSize.height
+										);
+	toolbar.frame = navigationFrame;
+	[panel addSubview:toolbar];	
+	
+}
+
+-(void)hideToolbar{
+	[panel removeFromSuperview];	
+	[panel release];
+	panel = nil;	
+}
+
+-(UIView*)panel{
+	return panel;
+}
+
+#pragma mark orientation
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+	return YES;
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
+	if (self.editing) {
+		panel.hidden = YES;
+	}
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+	if (self.editing) {
+		panel.hidden = NO;
+	}
+}
+
+-(NSString*)labelForPrevious{
+	NSString* btnLbl = NSLocalizedString(@"form.toolbar.previousButton", nil);
+	if ([btnLbl isEqualToString:@"form.toolbar.previousButton"]) {
+		btnLbl = @"Prev";
+	}	
+	return btnLbl;
+}
+
+-(NSString*)labelForNext{
+	NSString* btnLbl = NSLocalizedString(@"form.toolbar.nextButton", nil);
+	if ([btnLbl isEqualToString:@"form.toolbar.nextButton"]) {
+		btnLbl = @"Next";
+	}	
+	return btnLbl;	
+}
+
+-(NSString*)labelForDone{
+	NSString* btnLbl = NSLocalizedString(@"form.toolbar.doneButton", nil);
+	if ([btnLbl isEqualToString:@"form.toolbar.doneButton"]) {
+		btnLbl = @"Done";
+	}	
+	return btnLbl;	
+}
+
+-(void)drawToolbar{
+	
+	//Screen dimensions
+	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+	
+	//Toolbar should be built firstly to discover its heigh
 	NSString* btnLbl = NSLocalizedString(@"form.toolbar.previousButton", nil);
 	if ([btnLbl isEqualToString:@"form.toolbar.previousButton"]) {btnLbl = @"Prev";}
 	UIBarButtonItem* prevBtn = [[[UIBarButtonItem alloc] initWithTitle:btnLbl style:UIBarButtonItemStyleBordered target:self action:@selector(actionPrevious)] autorelease];
@@ -395,16 +485,6 @@
 	toolbar.frame = navigationFrame;
 	[panel addSubview:toolbar];	
 	
-}
-
--(void)hideToolbar{
-	[panel removeFromSuperview];	
-	[panel release];
-	panel = nil;	
-}
-
--(UIView*)panel{
-	return panel;
 }
 
 

@@ -38,7 +38,7 @@
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
-	[self.formController actionNextCell:self];
+	[self.formController actionNext];
 	return NO;
 	//return [self.formController userPressReturnOn:self];
 }

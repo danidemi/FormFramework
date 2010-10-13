@@ -82,6 +82,18 @@
 	[formController setValue:[[NSDate date] description] forField:@"password"];	
 }
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+	return [formController shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
+	[formController willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+	[formController didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+}
+
 #pragma mark FormPickerCellDelegate
 
 -(NSInteger)numberOfComponentsInFormPickerCell:(FormPickerCell*)pickerCell{

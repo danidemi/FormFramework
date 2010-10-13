@@ -40,17 +40,20 @@
 /**
  Callback invoked whenever the user press the done button on the toolbar.
  */
--(BOOL)actionDone:(FormCell*)cell;
+//-(BOOL)actionDone:(FormCell*)cell;
+-(BOOL)actionDone;
 
 /**
  Callback invoked whenever the user press the next button on the toolbar.
  */
--(void)actionNextCell:(FormCell*)cell;
+//-(void)actionNextCell:(FormCell*)cell;
+-(void)actionNext;
 
 /**
  Callback invoked whenever the user press the prev button on the toolbar.
  */
--(void)actionPreviousCell:(FormCell*)cell;
+//-(void)actionPreviousCell:(FormCell*)cell;
+-(void)actionPrevious;
 
 #pragma mark -
 #pragma mark Form Validation
