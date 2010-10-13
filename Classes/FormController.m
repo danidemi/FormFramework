@@ -7,6 +7,7 @@
 #import "FormPickerCellLabel.h"
 #import "FieldStyle.h"
 #import "UIViewUtils.h"
+#import "math.h"
 
 @implementation FormController
 
@@ -404,14 +405,15 @@
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
-	if (self.editing) {
+	if (isEditing) {
 		panel.hidden = YES;
 	}
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
-	if (self.editing) {
+	if (isEditing) {
 		panel.hidden = NO;
+		[self drawToolbar];
 	}
 }
 
@@ -442,48 +444,75 @@
 -(void)drawToolbar{
 	
 	//Screen dimensions
-	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+	CGRect screenRect = [[UIScreen mainScreen] applicationFrame];	
 	
-	//Toolbar should be built firstly to discover its heigh
-	NSString* btnLbl = NSLocalizedString(@"form.toolbar.previousButton", nil);
-	if ([btnLbl isEqualToString:@"form.toolbar.previousButton"]) {btnLbl = @"Prev";}
-	UIBarButtonItem* prevBtn = [[[UIBarButtonItem alloc] initWithTitle:btnLbl style:UIBarButtonItemStyleBordered target:self action:@selector(actionPrevious)] autorelease];
+	//Toolbar buttons
+	UIBarButtonItem* prevBtn = [[[UIBarButtonItem alloc] initWithTitle:[self labelForPrevious] style:UIBarButtonItemStyleBordered target:self action:@selector(actionPrevious)] autorelease];
+	UIBarButtonItem* nextBtn = [[[UIBarButtonItem alloc] initWithTitle:[self labelForNext] style:UIBarButtonItemStyleBordered target:self action:@selector(actionNext)] autorelease];		
+	UIBarButtonItem* flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];		
+	UIBarButtonItem* doneBtn = [[[UIBarButtonItem alloc] initWithTitle:[self labelForDone] style:UIBarButtonItemStyleDone target:self action:@selector(actionDone)] autorelease];
+
 	
-	btnLbl = NSLocalizedString(@"form.toolbar.nextButton", nil);
-	if ([btnLbl isEqualToString:@"form.toolbar.nextButton"]) {btnLbl = @"Next";}	
-	UIBarButtonItem* nextBtn = [[[UIBarButtonItem alloc] initWithTitle:btnLbl style:UIBarButtonItemStyleBordered target:self action:@selector(actionNext)] autorelease];	
-	
-	UIBarButtonItem* flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];	
-	
-	btnLbl = NSLocalizedString(@"form.toolbar.doneButton", nil);
-	if ([btnLbl isEqualToString:@"form.toolbar.doneButton"]) {btnLbl = @"Done";}
-	UIBarButtonItem* doneBtn = [[[UIBarButtonItem alloc] initWithTitle:btnLbl style:UIBarButtonItemStyleDone target:self action:@selector(actionDone)] autorelease];
-	
-	UIToolbar* toolbar = [[[UIToolbar alloc] init] autorelease];	
+	//Set the navigaiton frame inside the panel
+	UIToolbar* toolbar = [[UIToolbar alloc] init];
 	[toolbar setItems: [NSArray arrayWithObjects:prevBtn, nextBtn, flexItem, doneBtn, nil] animated:YES];
 	[toolbar setTintColor: [UIColor colorWithRed:0.569 green:0.6 blue:0.643 alpha:1.0]];
 	CGSize navSize = [toolbar sizeThatFits:CGSizeZero];
-	
-	
-	//Big gray view that contains all input
-	panel = [UIView new];
-	CGRect panelFrame = CGRectMake(0.0,
-								   screenRect.size.height - (196.0 + navSize.height),
-								   navSize.width,
-								   navSize.height + 196.0
-								   );	
-	panel.frame = panelFrame;
-	[[UIViewUtils rootViewOf:[self tableView]] addSubview:panel];	
-	panel.backgroundColor = [UIColor colorWithRed:0.569 green:0.6 blue:0.643 alpha:1.0];
-	
-	//Set the navigaiton frame inside the panel
 	CGRect navigationFrame = CGRectMake(0.0,
 										0.0,
 										navSize.width,
 										navSize.height
 										);
-	toolbar.frame = navigationFrame;
+	toolbar.frame = navigationFrame;	
+	
+	//Big gray view that contains all input
+	if (panel) {
+		[panel removeFromSuperview];
+		[panel release];
+	}	
+	
+	CGRect panelFrame;
+	if (containingController.interfaceOrientation == UIInterfaceOrientationPortrait){
+		panelFrame = CGRectMake(0.0,
+									   screenRect.size.height - (196.0 + navSize.height),
+									   navSize.width,
+									   navSize.height + 196.0
+									   );			
+	}else if (containingController.interfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+		
+		panelFrame = CGRectMake(150.0,
+								0.0,
+								200.0,
+								screenRect.size.height
+								);				
+		NSLog(@"left");		
+		toolbar.transform = CGAffineTransformMakeRotation(M_PI);
+		
+	}else if (containingController.interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
+		panelFrame = CGRectMake(0.0,
+									   0.0,
+									   navSize.width,
+									   navSize.height + 196.0
+									   );			
+	}else if (containingController.interfaceOrientation == UIInterfaceOrientationLandscapeRight){
+		//iPhone button on the right
+		
+		panelFrame = CGRectMake(0.0,
+								0.0,
+								200.0,
+								screenRect.size.height
+								);		
+		toolbar.transform = CGAffineTransformMakeRotation(-M_PI);		
+				
+	}
+			
+	panel = [UIView new];
+	panel.frame = panelFrame;
+	[[UIViewUtils rootViewOf:[self tableView]] addSubview:panel];	
+	panel.backgroundColor = [UIColor colorWithRed:0.569 green:0.6 blue:0.643 alpha:1.0];
+	
 	[panel addSubview:toolbar];	
+	[toolbar release];	
 	
 }
 
